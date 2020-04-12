@@ -9,9 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var viewModel = MainViewModel()
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            CommandListView(results: $viewModel.dataSource).background(Color.blue)
+            TextBox(viewModel: viewModel)
+        }
     }
 }
 

@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846838B02438D22F00917A97 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846838AF2438D22F00917A97 /* TextBox.swift */; };
+		846838B22438D29C00917A97 /* CommandListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846838B12438D29C00917A97 /* CommandListView.swift */; };
+		84C09D9824399C920081B268 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C09D9724399C920081B268 /* DependencyManager.swift */; };
 		84C847FF2438A9590007FC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C847FE2438A9590007FC6B /* AppDelegate.swift */; };
 		84C848012438A9590007FC6B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C848002438A9590007FC6B /* Document.swift */; };
 		84C848032438A9590007FC6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C848022438A9590007FC6B /* ContentView.swift */; };
 		84C848052438A95B0007FC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C848042438A95B0007FC6B /* Assets.xcassets */; };
 		84C848082438A95B0007FC6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C848072438A95B0007FC6B /* Preview Assets.xcassets */; };
 		84C8480B2438A95B0007FC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C848092438A95B0007FC6B /* Main.storyboard */; };
+		84C848182438AFB50007FC6B /* CommandLineWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C848172438AFB50007FC6B /* CommandLineWorker.swift */; };
+		84C8481A2438B08F0007FC6B /* CommandLineRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C848192438B08F0007FC6B /* CommandLineRunner.swift */; };
+		84C8481C2438B94E0007FC6B /* MessageItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8481B2438B94E0007FC6B /* MessageItemModel.swift */; };
+		84C8481F2438BC620007FC6B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8481E2438BC620007FC6B /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		846838AF2438D22F00917A97 /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
+		846838B12438D29C00917A97 /* CommandListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandListView.swift; sourceTree = "<group>"; };
+		84C09D9724399C920081B268 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		84C847FB2438A9590007FC6B /* TerX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C847FE2438A9590007FC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C848002438A9590007FC6B /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -25,6 +35,10 @@
 		84C8480A2438A95B0007FC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84C8480C2438A95B0007FC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C8480D2438A95B0007FC6B /* TerX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TerX.entitlements; sourceTree = "<group>"; };
+		84C848172438AFB50007FC6B /* CommandLineWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineWorker.swift; sourceTree = "<group>"; };
+		84C848192438B08F0007FC6B /* CommandLineRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineRunner.swift; sourceTree = "<group>"; };
+		84C8481B2438B94E0007FC6B /* MessageItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItemModel.swift; sourceTree = "<group>"; };
+		84C8481E2438BC620007FC6B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846838AE2438D22300917A97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				846838AF2438D22F00917A97 /* TextBox.swift */,
+				846838B12438D29C00917A97 /* CommandListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		84C847F22438A9590007FC6B = {
 			isa = PBXGroup;
 			children = (
@@ -57,14 +80,14 @@
 		84C847FD2438A9590007FC6B /* TerX */ = {
 			isa = PBXGroup;
 			children = (
-				84C847FE2438A9590007FC6B /* AppDelegate.swift */,
-				84C848002438A9590007FC6B /* Document.swift */,
-				84C848022438A9590007FC6B /* ContentView.swift */,
-				84C848042438A95B0007FC6B /* Assets.xcassets */,
-				84C848092438A95B0007FC6B /* Main.storyboard */,
-				84C8480C2438A95B0007FC6B /* Info.plist */,
-				84C8480D2438A95B0007FC6B /* TerX.entitlements */,
+				84C848212438CC900007FC6B /* Worker */,
+				84C848202438CC7D0007FC6B /* App */,
+				84C848162438AF390007FC6B /* Scripts */,
+				84C848152438AEFA0007FC6B /* Models */,
+				84C848142438AEEC0007FC6B /* Modules */,
+				84C848132438AED40007FC6B /* UI */,
 				84C848062438A95B0007FC6B /* Preview Content */,
+				84C09D9724399C920081B268 /* DependencyManager.swift */,
 			);
 			path = TerX;
 			sourceTree = "<group>";
@@ -75,6 +98,68 @@
 				84C848072438A95B0007FC6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84C848132438AED40007FC6B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				846838AE2438D22300917A97 /* Components */,
+				84C848022438A9590007FC6B /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84C848142438AEEC0007FC6B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84C8481D2438BC4F0007FC6B /* ViewModels */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84C848152438AEFA0007FC6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C8481B2438B94E0007FC6B /* MessageItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C848162438AF390007FC6B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		84C8481D2438BC4F0007FC6B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84C8481E2438BC620007FC6B /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84C848202438CC7D0007FC6B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84C847FE2438A9590007FC6B /* AppDelegate.swift */,
+				84C848002438A9590007FC6B /* Document.swift */,
+				84C848042438A95B0007FC6B /* Assets.xcassets */,
+				84C848092438A95B0007FC6B /* Main.storyboard */,
+				84C8480C2438A95B0007FC6B /* Info.plist */,
+				84C8480D2438A95B0007FC6B /* TerX.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84C848212438CC900007FC6B /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				84C848172438AFB50007FC6B /* CommandLineWorker.swift */,
+				84C848192438B08F0007FC6B /* CommandLineRunner.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +233,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C8481F2438BC620007FC6B /* MainViewModel.swift in Sources */,
 				84C848012438A9590007FC6B /* Document.swift in Sources */,
+				84C09D9824399C920081B268 /* DependencyManager.swift in Sources */,
 				84C847FF2438A9590007FC6B /* AppDelegate.swift in Sources */,
 				84C848032438A9590007FC6B /* ContentView.swift in Sources */,
+				84C848182438AFB50007FC6B /* CommandLineWorker.swift in Sources */,
+				84C8481C2438B94E0007FC6B /* MessageItemModel.swift in Sources */,
+				846838B02438D22F00917A97 /* TextBox.swift in Sources */,
+				84C8481A2438B08F0007FC6B /* CommandLineRunner.swift in Sources */,
+				846838B22438D29C00917A97 /* CommandListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +377,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TerX/TerX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TerX/App/TerX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TerX/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TerX/Info.plist;
+				INFOPLIST_FILE = TerX/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -306,12 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TerX/TerX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TerX/App/TerX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TerX/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TerX/Info.plist;
+				INFOPLIST_FILE = TerX/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
